@@ -1,10 +1,10 @@
 <turbo-frame id="full-section">
-  <h2>Ruby on Rails developer</h2>
+  <h2>Ruby on Rails developer</h1>
   <nav>
-    <%= link_to "Experience", experience_path(exp:true), data: { 'turbo-stream': 'true', turbo_method: :get } %>
-    <%= link_to "Projects", experience_path(projects:true), data: { 'turbo-stream': 'true', turbo_method: :get } %>
-    <%= link_to "Skills", experience_path(skills:true), data: { 'turbo-stream': 'true', turbo_method: :get }%>
-    <%= link_to "Education", experience_path(edu:true), data: { 'turbo-stream': 'true', turbo_method: :get }%>
-    <%= link_to "Contact", experience_path(contact:true), data: { 'turbo-stream': 'true', turbo_method: :get }%>
+    <%= link_to "Experience", experience_path(exp:true), data: { 'turbo-stream': 'true', turbo_method: :get }, class: 'full-section-data'%>
+    <%= link_to "Projects", experience_path(projects:true), data: { 'turbo-stream': 'true', turbo_method: :get }, class: 'full-section-data' %>
+    <%= link_to "Skills", experience_path(skills:true), data: { 'turbo-stream': 'true', turbo_method: :get }, class: 'full-section-data'%>
+    <%= link_to "Education", experience_path(edu:true), data: { 'turbo-stream': 'true', turbo_method: :get }, class: 'full-section-data'%>
+    <%= link_to "Contact", experience_path(contact:true), data: { 'turbo-stream': 'true', turbo_method: :get }, class: 'full-section-data'%>
   </nav>
 </turbo-frame>
