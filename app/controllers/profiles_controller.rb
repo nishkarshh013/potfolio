@@ -5,6 +5,8 @@ class ProfilesController < ApplicationController
 	def experience
 		if params[:exp] == "true"
 		  respond_to do |format|
+		  	format.html
+  			format.js
 		    format.turbo_stream do
 		      render turbo_stream: turbo_stream.replace(
 		        'full-section',
@@ -14,6 +16,8 @@ class ProfilesController < ApplicationController
 		  end
 		elsif params[:skills] == "true"
 			respond_to do |format|
+				format.html
+  			format.js
 		    format.turbo_stream do
 		      render turbo_stream: turbo_stream.replace(
 		        'full-section',
@@ -23,6 +27,8 @@ class ProfilesController < ApplicationController
 		  end
 		elsif params[:edu] == "true"
 			respond_to do |format|
+				format.html
+  			format.js
 		    format.turbo_stream do
 		      render turbo_stream: turbo_stream.replace(
 		        'full-section',
@@ -32,12 +38,14 @@ class ProfilesController < ApplicationController
 		  end
 		elsif params[:contact] == "true"
 			respond_to do |format|
+				format.html
+				format.js
 		    format.turbo_stream do
 		      render turbo_stream: turbo_stream.replace(
 		        'full-section',
 		        partial: 'profiles/contact'
 		      )
-		    end
+	    	end
 		  end
 		# elsif params[:back] == "true"
 		# 	respond_to do |format|
